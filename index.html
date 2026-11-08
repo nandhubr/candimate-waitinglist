@@ -62,6 +62,7 @@ button.btn{border:0;cursor:pointer;font-family:inherit}.note{font-size:13px;colo
 @media(prefers-reduced-motion:no-preference){.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}}
 @media(max-width:820px){.vs{grid-template-columns:1fr}.note{flex-direction:column;align-items:flex-start}body{padding-bottom:84px}.sticky{display:block;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--accent);color:var(--accent-ink);text-align:center;font-weight:800;padding:15px;border-radius:16px;text-decoration:none;box-shadow:0 14px 30px -10px rgba(0,0,0,.45);transition:transform .25s,opacity .25s}.sticky.off{transform:translateY(140%);opacity:0;pointer-events:none}}
 .joined{display:flex;align-items:center;gap:10px;margin:18px 0 0;font-size:14px;font-weight:700;color:var(--muted)}.joined b{color:var(--text)}.dot{flex:none;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--soft)}
+.note a,footer a{color:var(--accent);font-weight:700;text-decoration:none}.note a:hover,footer a:hover{text-decoration:underline}
 [hidden]{display:none!important}
 footer{border-top:1px solid var(--line);padding:24px 0 34px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .bn{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}.bn img{display:block;width:100%;height:auto;min-height:320px;object-fit:cover}.ov{position:absolute;left:0;right:0;bottom:0;padding:30px 28px;background:linear-gradient(0deg,rgba(5,47,41,.94),rgba(5,47,41,0));color:#fff}.ov h2{color:#fff;margin-bottom:8px;font-size:clamp(22px,4vw,34px)}.ov p{margin:0;color:#d4efe6;max-width:560px}.ov .eyebrow{color:#7fe3c6}
@@ -201,14 +202,14 @@ Use <a>/findbuddy</a> to find candidates near your exam centre.</div>
 <label>Upcoming exam (optional)<input name="exam" placeholder="e.g. Degree Level Prelims, 28 Nov"></label>
 <p class="err" id="err"></p>
 <button class="btn" id="b" type="submit">Get notified when we launch</button>
-<p class="note">We’ll only use your details to send you the bot link.</p>
+<p class="note">We’ll only use your details to send you the bot link. By joining, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
 </form>
 <p class="ok" id="ok" hidden>You’re in! We’ll message you the bot link once it’s ready.</p>
 <a class="btn ghost share" id="share" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
 </div>
 </div>
 
-<footer><span>© Candimate. Made in Kerala.</span><span>Independent project, not affiliated with any exam board or government body.</span></footer>
+<footer><span>© Candimate. Made in Kerala.</span><span><a href="privacy.html">Privacy Policy</a></span><span>Independent project, not affiliated with any exam board or government body.</span></footer>
 </div>
 <script>
 // OPTION A (recommended): your Supabase project URL and anon key. Run the SQL once.
